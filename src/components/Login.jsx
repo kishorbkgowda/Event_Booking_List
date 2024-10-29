@@ -67,7 +67,6 @@ const Login = () => {
           <button
             className="w-full py-2 px-4 bg-purple-500 hover:bg-purple-700 rounded-md shadow-lg text-white font-semibold transition duration-200"
             type="submit" 
-            
           >
             Sign In
           </button>
