@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Concert",
+        "description": "Live concert featuring famous artists.",
+        "category": "Music",
+        "date": "2024-11-01",
+        "availableSeats": 100,
+        "price": 50.00
+    },
+    {
+        "id": 2,
+        "title": "Art Exhibition",
+        "description": "Explore stunning artworks from local artists.",
+        "category": "Art",
+        "date": "2024-11-05",
+        "availableSeats": 50,
+        "price": 20.00
+    },
+    {
+        "id": 3,
+        "title": "Tech Conference",
+        "description": "Join us for a day of tech talks and networking.",
+        "category": "Technology",
+        "date": "2024-11-10",
+        "availableSeats": 0,
+        "price": 100.00
+    }
+]
