@@ -1,29 +1,192 @@
 [
     {
         "id": 1,
-        "title": "Concert",
+        "title": "Music",
         "description": "Live concert featuring famous artists.",
-        "category": "Music",
+        "category": "Concert",
         "date": "2024-11-01",
         "availableSeats": 100,
-        "price": 50.00
+        "price": 50.00,
+        "imgSrc": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4"
     },
     {
         "id": 2,
         "title": "Art Exhibition",
-        "description": "Explore stunning artworks from local artists.",
+        "description": "Exhibition showcasing contemporary art.",
         "category": "Art",
         "date": "2024-11-05",
         "availableSeats": 50,
-        "price": 20.00
+        "price": 25.00,
+        "imgSrc": "https://static.vecteezy.com/system/resources/previews/000/446/375/large_2x/vector-font-design-with-word-art.jpg"
     },
     {
         "id": 3,
         "title": "Tech Conference",
-        "description": "Join us for a day of tech talks and networking.",
+        "description": "Annual tech conference with industry leaders.",
         "category": "Technology",
         "date": "2024-11-10",
-        "availableSeats": 0,
-        "price": 100.00
+        "availableSeats": 200,
+        "price": 150.00,
+        "imgSrc": "https://cdn.vectorstock.com/i/1000v/32/74/technology-abstract-neon-font-and-alphabet-techno-vector-25883274.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Cooking Workshop",
+        "description": "Hands-on cooking workshop with professional chefs.",
+        "category": "Food",
+        "date": "2024-11-12",
+        "availableSeats": 20,
+        "price": 75.00,
+        "imgSrc": "https://tse3.mm.bing.net/th?id=OIP.gOBwsBSnK1pNOGGjEgw7SAAAAA&pid=Api&P=0&h=180"
+    },
+    {
+        "id": 5,
+        "title": "Yoga Retreat",
+        "description": "Weekend retreat focused on mindfulness and relaxation.",
+        "category": "Health",
+        "date": "2024-11-15",
+        "availableSeats": 30,
+        "price": 200.00,
+        "imgSrc": "https://www.forbesindia.com/media/images/2023/Jun/img_211187_yoga_bg.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Film Festival",
+        "description": "Showcase of independent films and documentaries.",
+        "category": "Film",
+        "date": "2024-11-20",
+        "availableSeats": 150,
+        "price": 60.00,
+        "imgSrc": "https://im.whatshot.in/img/2021/May/istock-847292080-cropped-1622103696.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Book Fair",
+        "description": "Annual fair featuring local and international authors.",
+        "category": "Literature",
+        "date": "2024-11-25",
+        "availableSeats": 250,
+        "price": 5.00,
+        "imgSrc": "https://johnrexschool.org/wp-content/uploads/2015/03/Book-Fair.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Charity Run",
+        "description": "Fun run to raise funds for local charities.",
+        "category": "Sports",
+        "date": "2024-12-01",
+        "availableSeats": 500,
+        "price": 20.00,
+        "imgSrc": "http://www.rollercoasterruns.com/wp-content/uploads/2018/04/Run-for-Charity.png"
+    },
+    {
+        "id": 9,
+        "title": "Fashion Show",
+        "description": "Showcasing the latest trends in fashion.",
+        "category": "Fashion",
+        "date": "2024-12-05",
+        "availableSeats": 100,
+        "price": 40.00,
+        "imgSrc": "https://2.bp.blogspot.com/-6Wbeipoyuvw/UhFHOSi7N7I/AAAAAAAAAGs/VCqFbeDvwLM/s640/8_201204130258185948.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Comedy Night",
+        "description": "An evening of laughter with top comedians.",
+        "category": "Comedy",
+        "date": "2024-12-10",
+        "availableSeats": 80,
+        "price": 30.00,
+        "imgSrc": "https://tse1.mm.bing.net/th?id=OIP.6PSRkaNV5gMqpLVtBU71iAHaEr&pid=Api&P=0&h=180"
+    },
+    {
+        "id": 11,
+        "title": "Science Fair",
+        "description": "Showcasing innovative projects from students.",
+        "category": "Science",
+        "date": "2024-12-15",
+        "availableSeats": 200,
+        "price": 10.00,
+        "imgSrc": "https://tse2.mm.bing.net/th?id=OIP.j6oD51765EyhlrP7ZQqmkgHaFI&pid=Api&P=0&h=180"
+    },
+    {
+        "id": 12,
+        "title": "Nature Hike",
+        "description": "Guided hike through scenic trails.",
+        "category": "Outdoor",
+        "date": "2024-12-20",
+        "availableSeats": 15,
+        "price": 50.00,
+        "imgSrc": "https://tse2.mm.bing.net/th?id=OIP.SZ2eaSmSX-gGGY6Q28pvpwHaDw&pid=Api&P=0&h=180"
+    },
+    {
+        "id": 13,
+        "title": "Photography Workshop",
+        "description": "Learn photography skills from professionals.",
+        "category": "Photography",
+        "date": "2024-12-25",
+        "availableSeats": 25,
+        "price": 100.00,
+        "imgSrc": "https://tse4.mm.bing.net/th?id=OIP.Pd0StGjDR3MkkuzevQ4j6QHaD4&pid=Api&P=0&h=180"
+    },
+    {
+        "id": 14,
+        "title": "Dance Festival",
+        "description": "Celebrate dance with performances and workshops.",
+        "category": "Dance",
+        "date": "2024-12-30",
+        "availableSeats": 300,
+        "price": 15.00,
+        "imgSrc": "https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2022/02/22083138/Khajuraho-Dance-Festival-Guide.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Tech Bootcamp",
+        "description": "Intensive training in coding and development.",
+        "category": "Technology",
+        "date": "2025-01-05",
+        "availableSeats": 40,
+        "price": 300.00,
+        "imgSrc": "https://tse3.mm.bing.net/th?id=OIP.0hJApyjRzFyQInWBWj5OngHaE8&pid=Api&P=0&h=180"
+    },
+    {
+        "id": 16,
+        "title": "Local Food Festival",
+        "description": "Taste dishes from local restaurants and chefs.",
+        "category": "Food",
+        "date": "2025-01-10",
+        "availableSeats": 250,
+        "price": 20.00,
+        "imgSrc": "https://tse1.mm.bing.net/th?id=OIP.sNF_wsJEJoV-Z3HxGG1vAQHaEO&pid=Api&P=0&h=180"
+    },
+    {
+        "id": 17,
+        "title": "Outdoor Concert",
+        "description": "Concert under the stars with multiple artists.",
+        "category": "Concert",
+        "date": "2025-01-20",
+        "availableSeats": 300,
+        "price": 55.00,
+        "imgSrc": "https://tse1.mm.bing.net/th?id=OIP.f9Oro_EqeanvEdzgfUnJXgHaEJ&pid=Api&P=0&h=180"
+    },
+    {
+        "id": 18,
+        "title": "Wine Tasting",
+        "description": "Experience the best local wines.",
+        "category": "Food",
+        "date": "2025-01-25",
+        "availableSeats": 50,
+        "price": 45.00,
+        "imgSrc": "https://cdn.shopify.com/s/files/1/0168/8374/4832/articles/wine-tasting-013120_2048x.jpg?v=1580495941"
+    },
+    {
+        "id": 19,
+        "title": "Health Expo",
+        "description": "Discover the latest in health and wellness.",
+        "category": "Health",
+        "date": "2025-01-30",
+        "availableSeats": 150,
+        "price": 20.00,
+        "imgSrc": "https://tse3.mm.bing.net/th?id=OIP.tLenDN_vQz9LnUhGPiiEbwHaDs&pid=Api&P=0&h=180"
     }
 ]

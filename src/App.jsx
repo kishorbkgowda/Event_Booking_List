@@ -3,8 +3,8 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import EventList from './components/EventList';
 import Login from './components/Login';
-import store from './store/store'; // Ensure this is correct
-import { AuthProvider } from './contexts/AuthContext'; // Ensure this is correct
+import store from './store/store';
+import { AuthProvider } from './contexts/AuthContext';
 
 
 const App = () => (

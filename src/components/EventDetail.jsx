@@ -3,34 +3,39 @@ import { useDispatch } from 'react-redux';
 import { bookTicket } from '../store/eventsSlice';
 import { AuthContext } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const EventDetail = ({ event }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { user } = useContext(AuthContext); // Get user from context
+  const { user } = useContext(AuthContext); 
 
   const handleBooking = () => {
     if (!user) {
-      alert('Please log in to book tickets.'); // Alert if not logged in
-      navigate("/");
-      return; // Prevent booking if not logged in
+      toast("Please log in to book tickets.");
+      setTimeout(()=>
+      {
+        navigate("/");
+      },3000);
+      return;
     }
 
     if (event.availableSeats > 0) {
-      dispatch(bookTicket(event.id)); // Dispatch action to reduce seats
-      alert('Ticket booked!');
+      dispatch(bookTicket(event.id)); 
+      toast("Ticket booked!");
     } else {
-      alert('This event is fully booked.');
+      toast("This event is fully booked.");
     }
   };
 
   return (
     <div className="rounded overflow-hidden shadow-lg flex flex-col">
       <div className="relative overflow-hidden">
-        <a href="#" className=''>
+        <a href="#" className='flex justify-center items-center object-cover'>
           <img
             className="w-full h-auto max-w-[21rem] overflow-hidden"
-            src={event.category === "Music" ? "https://tse3.mm.bing.net/th?id=OIP.7FECyYvFZmvxqp4tJ5EriQHaEK&pid=Api&P=0&h=180" : event.category === "Art" ? "https://static.vecteezy.com/system/resources/previews/000/446/375/large_2x/vector-font-design-with-word-art.jpg" : event.category === "Technology" ? "https://cdn.vectorstock.com/i/1000v/32/74/technology-abstract-neon-font-and-alphabet-techno-vector-25883274.jpg" : null }
+            src={event.imgSrc}
             alt="Sunset in the mountains"
           />
           <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
@@ -86,6 +91,7 @@ const EventDetail = ({ event }) => {
       >
         Book Ticket
       </button>
+      {/* <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false} /> */}
     </div>
   );
 };

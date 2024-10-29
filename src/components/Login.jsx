@@ -1,16 +1,16 @@
 import React, { useContext, useState } from 'react';
-import { AuthContext } from '../contexts/AuthContext'; // Ensure this path is correct
+import { AuthContext } from '../contexts/AuthContext'; 
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { login } = useContext(AuthContext); // Destructure login from context
+  const { login } = useContext(AuthContext); 
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    const success = login({ email, password }); // You might want to modify this to return success
+    e.preventDefault(); 
+    const success = login({ email, password }); 
     if (success) {
       navigate("/events");
     }
@@ -39,11 +39,11 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter email"
-              required // Add required attribute for email input
+              required 
             />
             <label
               className="absolute left-0 -top-3.5 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-purple-500 peer-focus:text-sm"
-              htmlFor="email" // Change 'for' to 'htmlFor'
+              htmlFor="email" 
             >
               Email address
             </label>
@@ -55,18 +55,19 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter password"
-              required // Add required attribute for password input
+              required 
             />
             <label
               className="absolute left-0 -top-3.5 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-purple-500 peer-focus:text-sm"
-              htmlFor="password" // Change 'for' to 'htmlFor'
+              htmlFor="password" 
             >
               Password
             </label>
           </div>
           <button
             className="w-full py-2 px-4 bg-purple-500 hover:bg-purple-700 rounded-md shadow-lg text-white font-semibold transition duration-200"
-            type="submit" // Keep this type as submit
+            type="submit" 
+            
           >
             Sign In
           </button>

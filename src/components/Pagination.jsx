@@ -14,7 +14,7 @@ const Pagination = ({ totalEvents, eventsPerPage, paginate }) => {
             <li key={number} className="flex justify-center items-center">
               <button 
                 onClick={() => paginate(number)} 
-                className="bg-white text-center rounded-md flex justify-center items-center px-4 py-2"
+                className="bg-white hover:translate-y-[-5px] transition-all text-center rounded-md flex justify-center items-center px-4 py-1"
               >
                 {number}
               </button>
